@@ -59,13 +59,12 @@ Once you're finished iterating and happy with the output push only the latest ve
 ## SDK Installation
 
 ```bash
-pip install git+https://github.com/speakeasy-sdks/template-sdk.git
+pip install git+https://github.com/speakeasy-sdks/CC-sample-sdk.git
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
 ```python
 import speakeasybar
 from speakeasybar.models import operations, shared
@@ -76,10 +75,12 @@ s = speakeasybar.Speakeasybar(
     ),
 )
 
-res = s.drinks.list_drinks(drink_type=shared.DrinkType.WINE)
+
+res = s.drinks.list_drinks(drink_type=shared.DrinkType.SPIRIT)
 
 if res.drinks is not None:
     # handle response
+    pass
 ```
 <!-- End SDK Example Usage -->
 
@@ -108,6 +109,18 @@ if res.drinks is not None:
 
 * [create_order](docs/sdks/orders/README.md#create_order) - Create an order.
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
